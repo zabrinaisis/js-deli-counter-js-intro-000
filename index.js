@@ -12,3 +12,18 @@ function nowServing(line) {
     return ("Now serving " + line.shift());
   }
 }
+
+function currentLine(line) {
+  if (line.length === 0) {
+    console.log("The line is currently empty.");
+  } else {
+    var lineString = "The line is currently: ";
+    for (let i = 0; i < line.length; i++) {
+      if (i === (line.length - 1)) {
+        lineString += i + ". " + line[i]
+      } else {
+        lineString += i + ". " + line[i] + ", "
+      }
+    }
+  }
+}
