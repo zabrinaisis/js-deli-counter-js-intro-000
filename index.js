@@ -12,4 +12,3 @@ function nowServing(line) {
     return (line.shift());
   }
 }
-
