@@ -19,9 +19,9 @@ function currentLine(line) {
     var lineString = "The line is currently: ";
     for (let i = 1; i < (line.length + 1); i++) {
       if (i === line.length) {
-        lineString += i + ". " + line[i]
+        lineString += i + ". " + line[i-1]
       } else {
-        lineString += i + ". " + line[i] + ", "
+        lineString += i + ". " + line[i-1] + ", "
       }
     }
     return (lineString)
